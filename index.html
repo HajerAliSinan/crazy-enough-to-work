@@ -95,6 +95,8 @@ button:focus-visible,.card:focus-visible,#filter:focus-visible{outline:2px solid
 .panel label{font-size:12px;font-family:var(--mono);letter-spacing:.06em;color:var(--muted);text-transform:uppercase;display:flex;flex-direction:column;gap:5px}
 .panel input,.panel select{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;text-transform:none;letter-spacing:0;color:var(--ink);font-family:var(--body)}
 .panel .row{display:flex;gap:8px}
+.panel .row>*{flex:1 1 0;min-width:0}
+.panel input,.panel select{max-width:100%;min-width:0;box-sizing:border-box}
 .panel p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
 .primary{background:var(--cobalt);color:#fff;border-color:var(--cobalt);font-weight:600}
 .hidden{display:none!important}
